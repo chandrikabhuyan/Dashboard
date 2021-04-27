@@ -7,32 +7,31 @@ import Header from "./components/Header";
 import Menus from "./components/Menus";
 import Home from "./components/Home";
 import AddCourse from "./components/AddCourse";
-import { BrowserRouter as Router, Route }  from "react-router-dom";
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   const btnHandle = () => {
-    toast.success("done",{
-      position:"top-right",
+    toast.success("done", {
+      position: "top-right",
     });
   };
 
-  return(
+  return (
     <div>
       <Router>
-        <ToastContainer /> 
+        <ToastContainer />
         <Container>
-         <Header />
-         <Row>
+          <Header />
+          <Row>
             <Col md={4}>
-              <Menus/>
+              <Menus />
             </Col>
             <Col md={8}>
-              <Route path="/" component={Home} exact/>
-              <Route path="/add-course" component={AddCourse} exact/>
+              <Route path="/" component={Home} exact />
+              <Route path="/add-course" component={AddCourse} exact />
             </Col>
-         </Row>
-        </Container>   
+          </Row>
+        </Container>
       </Router>
     </div>
   );
