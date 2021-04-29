@@ -4,7 +4,7 @@ import Header from "./Header";
 const Opportunities = () => {
   return (
     <div>
-      <Header />
+      <h1>hello</h1>
     </div>
   );
 };
