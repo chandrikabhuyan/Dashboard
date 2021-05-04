@@ -1,7 +1,7 @@
 import React from "react";
-import { ReactComponent as Network } from "./../network.svg";
+import { ReactComponent as Meetings } from "./../network.svg";
 import { ReactComponent as Home } from "./../home.svg";
-import { ReactComponent as Opportunities } from "./../opportunities.svg";
+import { ReactComponent as Projects } from "./../opportunities.svg";
 import { Link } from "react-router-dom";
 const Menus = () => {
   return (
@@ -17,23 +17,23 @@ const Menus = () => {
         </Link>
       </div>
       <div className="flex flex-row mt-4 group-hover:bg-gray-600">
-        <Opportunities />
+        <Projects />
         <Link
           className="pl-2 text-2xl font-bold text-gray-800 appearance-none"
           tag="a"
-          to="/opportunities"
+          to="/projects"
         >
-          Opportunities
+          Projects
         </Link>
       </div>
       <div className="flex flex-row mt-4 group-hover:bg-gray-600">
-        <Network />
+        <Meetings className="h-8"/>
         <Link
           className="pl-2 text-2xl font-bold text-gray-800 appearance-none"
           tag="a"
-          to="/"
+          to="/meetings"
         >
-          My Network
+          Meetings
         </Link>
       </div>
     </div>
